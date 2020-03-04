@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Kontakt</title>
+
+        <!--  --- Favicons --- -->
+        <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="src/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="src/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="src/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#f0f0f0">
+        <meta name="msapplication-config" content="src/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--  --- Stylesheet --- -->
+        <link rel = "stylesheet" type="text/css" href="src/css/style.css">
+    </head>
+    <body>
+        <nav id="header-nav">
+
+            <!--  --- Navigationsleise Desktop--- -->
+
+            <div class="container" id="desktop-nav">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html"><img src="src/img/webdesign-logo.png" alt="Das Logo"></a>
+                        <ul>
+                            <li><a href="index.html" class="logo-link">Startseite</a></li>
+                            <li><a href="leistungen.html">Leistungen</a></li>
+                            <li class="active"><a href="contact.html">Kontakt</a></li>
+                            <li><a href="impressum.html">Impressum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--  --- Navigationsleiste MOBIL --- -->
+
+            <div class="container" id="mobile-nav">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo"></a>
+                        <div class="clearfix" id="mobile-nav-dropdown">
+                            <div id="mobile-nav-button">&equiv;</div>
+                            <div id="mobile-nav-content" class="clearfix">
+                                <ul>
+                                    <li><a href="index.html">Startseite</a></li>
+                                    <li><a href="leistungen.html">Leistungen</a></li>
+                                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                                    <li><a href="impressum.html">Impressum</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </nav>
+
+        <!--  --- Header-Banner ---- -->
+
+        <header id="header-banner-klein"></header>
+
+        <!--  --- Kontakt-Bereich ---- -->
+
+        <section id="kontakt-bereich">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class ="intro-container">
+                            <h1>Kontakt</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam earum incidunt tempora sed eum nihil voluptatem, ad temporibus, laborum illum veritatis nisi ut porro facere deleniti aliquid numquam, natus explicabo esse? Officiis corporis eius in! Rem ut debitis suscipit nostrum tenetur? Non aut explicabo tenetur, odio nihil accusamus quod similique!</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="kontakt-formular" action="kontakt.html" method="post"> 
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="vorname" class="screenreader">Vorname:</label>
+                            <input id="vorname" type="text" name="vorname" placeholder="Vorname">
+                        </div>
+                        <div class="col-3">
+                            <label for="nachname" class="screenreader">Nachname:</label>
+                            <input id="nachname" type="text" name="nachname" placeholder="Nachname">   
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="email" class="screenreader">E-mail:</label>
+                            <input id="email" type="text" name="email" placeholder="E-Mail" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib eine gültige E-Mail ein!">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="nachrichtl" class="screenreader">Nachricht:</label>
+                            <textarea name="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn-typ-3" type="submit" id="absenden-button">Senden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--  --- Footer---- -->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class ="col-6">
+                        <span>WEBDESIGN made simple, Udemy Kurs von Ruben Winkler (2020)</span>
+                        <nav id= "footer-nav">
+                            <a href ="impressum.html">Impressum</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
